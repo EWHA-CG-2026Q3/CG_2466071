@@ -22,7 +22,7 @@ public class S03_SingleTriangleMesh_Finish : MonoBehaviour
         Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
-        mesh.RecalculateNormals();
+        mesh.RecalculateNormals(); //normal로 정면 정하기
 
         GetComponent<MeshFilter>().mesh = mesh;
         GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
