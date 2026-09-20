@@ -17,8 +17,8 @@ public class S03_CustomPolygonMesh_Pentagon : MonoBehaviour
         int[] triangles = new int[]
         {
           0, 1, 2,
-          0, 3, 2,
-          0, 4, 3  
+          0, 2, 3,
+          0, 3, 4  
         };
 
         Mesh mesh = new Mesh();
