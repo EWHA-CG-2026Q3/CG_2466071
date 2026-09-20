@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 987502492}
   - component: {fileID: 987502494}
   - component: {fileID: 987502493}
+  - component: {fileID: 987502495}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -372,6 +373,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987502491}
   m_CullTransparentMesh: 1
+--- !u!114 &987502495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987502491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde42b8439c674d7cadb5723058118b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::S06_SoftwareRasterizer_Finish
+  canvasWidth: 256
+  canvasHeight: 256
+  vertexA: {x: 128, y: 200}
+  vertexB: {x: 60, y: 60}
+  vertexC: {x: 200, y: 60}
+  fillColor: {r: 1, g: 0.6, b: 0.2, a: 1}
+  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1001 &6094107994192285228
 PrefabInstance:
   m_ObjectHideFlags: 0
