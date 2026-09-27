@@ -88,7 +88,7 @@ public class S05_MyMeshRenderer : MonoBehaviour
             for (int y = 0; y < canvasHeight; y++)
             {
                 bool isColorA = ((x / size) + (y / size)) % 2 == 0;
-                Color pixelColor = isColorA ? colorB : colorA;
+                Color pixelColor = isColorA ? colorA : colorB;
 
                 canvasTexture.SetPixel(x, y, pixelColor);
             }
