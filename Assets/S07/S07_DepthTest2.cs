@@ -7,18 +7,18 @@ public class S07_DepthTest2 : MonoBehaviour
     [SerializeField] private int canvasWidth = 256;
     [SerializeField] private int canvasHeight = 256;
 
-    // 삼각형 1: 파랑, 더 멀리 있음
+    // 삼각형 1: 파랑
     [SerializeField] private Vector3 vertexA1 = new Vector3(130, 210, 0.5f);
     [SerializeField] private Vector3 vertexB1 = new Vector3(85, 50, 0.5f);
     [SerializeField] private Vector3 vertexC1 = new Vector3(220, 50, 0.5f);
 
     // 삼각형 2: 주황, 더 가까이 있음
-    [SerializeField] private Vector3 vertexA2 = new Vector3(75, 175, 0.3f);
-    [SerializeField] private Vector3 vertexB2 = new Vector3(30, 70, 0.3f);
-    [SerializeField] private Vector3 vertexC2 = new Vector3(165, 70, 0.3f);
+    [SerializeField] private Vector3 vertexA2 = new Vector3(75, 175, 0.1f);
+    [SerializeField] private Vector3 vertexB2 = new Vector3(30, 70, 0.1f);
+    [SerializeField] private Vector3 vertexC2 = new Vector3(165, 70, 0.1f);
 
-    // 삼각형 3: 초록
-    [SerializeField] private Vector3 vertexA3 = new Vector3(190, 210, 0.9f);
+    // 삼각형 3: 초록, 깊이가 일정한 기준 삼각형
+    [SerializeField] private Vector3 vertexA3 = new Vector3(190, 210, 0.25f);
     [SerializeField] private Vector3 vertexB3 = new Vector3(135, 50, 0.25f);
     [SerializeField] private Vector3 vertexC3 = new Vector3(255, 50, 0.25f);
 
@@ -64,8 +64,9 @@ public class S07_DepthTest2 : MonoBehaviour
         ClearCanvasAndDepthBuffer();
         // TODO 0: 이 세 줄의 순서를 바꿔도 결과가 유지되는지 확인
         DrawTriangle(vertexA1, vertexB1, vertexC1, color1);
-        DrawTriangle(vertexA2, vertexB2, vertexC2, color2);
+       
         DrawTriangle(vertexA3, vertexB3, vertexC3, color3);
+        DrawTriangle(vertexA2, vertexB2, vertexC2, color2);
 
 
         canvasTexture.Apply();
