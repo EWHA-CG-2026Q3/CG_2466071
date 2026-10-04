@@ -13,9 +13,9 @@ public class S07_Clipping : MonoBehaviour
     // 왼쪽(x < 40)과 위쪽(y > 216) 경계를 넘도록 직접 설정
     [SerializeField] private List<Vector2> polygon = new List<Vector2>
     {
-        new Vector2(10, 130),
-        new Vector2(130, 250),
-        new Vector2(246, 130)
+        new Vector2(10, 100),
+        new Vector2(130, 245),
+        new Vector2(246, 160)
     };
 
     [SerializeField] private Color fillColor =
