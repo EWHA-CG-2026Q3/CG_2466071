@@ -14,8 +14,8 @@ public class S07_DepthTest2 : MonoBehaviour
 
     // 삼각형 2: 주황, 더 가까이 있음
     [SerializeField] private Vector3 vertexA2 = new Vector3(75, 175, 0.1f);
-    [SerializeField] private Vector3 vertexB2 = new Vector3(30, 70, 0.1f);
-    [SerializeField] private Vector3 vertexC2 = new Vector3(165, 70, 0.1f);
+    [SerializeField] private Vector3 vertexB2 = new Vector3(30, 70, 0.6f);
+    [SerializeField] private Vector3 vertexC2 = new Vector3(165, 70, 0.6f);
 
     // 삼각형 3: 초록, 깊이가 일정한 기준 삼각형
     [SerializeField] private Vector3 vertexA3 = new Vector3(190, 210, 0.25f);
