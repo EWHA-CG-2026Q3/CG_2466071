@@ -13,6 +13,35 @@ public class S09_Shear : MonoBehaviour
         diamondMesh = GetComponent<DiamondMesh>();
     }
 
+    void Update()
+    {
+        if (diamondMesh == null || diamondMesh.BaseVertices == null) return;
+        float[,] M = ShearMatrixRaw(k);
+        Vector3[] baseVertices = diamondMesh.BaseVertices;
+        Vector3[] verts = new Vector3[baseVertices.Length];
+        for (int i = 0; i < baseVertices.Length; i++)
+            verts[i] = FromHomogeneous(MultiplyMatrixVectorRaw(M, ToHomogeneous(baseVertices[i])));
+        diamondMesh.SetVertices(verts);
+    }
+
+    void OnValidate()
+    {
+        Vector3 top = new Vector3(0.5f, 1f, 0.5f);
+        Vector3 result = FromHomogeneous(MultiplyMatrixVectorRaw(ShearMatrixRaw(k), ToHomogeneous(top)));
+        Debug.Log($"k = {k:F1}, top {top.ToString("F1")} -> {result.ToString("F1")}", this);
+    }
+
+    float[,] ShearMatrixRaw(float k)
+    {
+        // 2열은 e2가 도착하는 (k, 1, 0, 0).
+        return new float[,] {
+            { 1f, k,  0f, 0f },
+            { 0f, 1f, 0f, 0f },
+            { 0f, 0f, 1f, 0f },
+            { 0f, 0f, 0f, 1f }
+        };
+    }
+
     Vector4 ToHomogeneous(Vector3 v)
     {
         return new Vector4(v.x, v.y, v.z, 1f);
