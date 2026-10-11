@@ -1,20 +1,20 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 // 동차좌표와 4×4 행렬로 스케일 → 회전 → 이동을 적용하는 스크립트
 // Unity의 Matrix4x4 타입 없이 float[4,4] 배열만으로 계산함
 [ExecuteAlways]
-[RequireComponent(typeof(DiamondMesh))]
+[RequireComponent(typeof(S09.DiamondMesh))]
 public class S09_TRS_Raw_Finish : MonoBehaviour
 {
     [SerializeField] Vector3 t = new Vector3(3f, 0f, 0f);   // 이동 (Position)
     [SerializeField] float angle = 90f;                      // z축 회전 각도, 도 단위 (Rotation z)
     [SerializeField] Vector3 s = new Vector3(2f, 1f, 1f);    // 스케일 (Scale)
 
-    DiamondMesh diamondMesh;
+    S09.DiamondMesh diamondMesh;
 
     void OnEnable()
     {
-        diamondMesh = GetComponent<DiamondMesh>();
+        diamondMesh = GetComponent<S09.DiamondMesh>();
     }
 
     void Update()

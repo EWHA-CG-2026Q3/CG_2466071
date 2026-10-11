@@ -2,15 +2,15 @@ using UnityEngine;
 
 [ExecuteAlways]
 [DefaultExecutionOrder(100)]
-[RequireComponent(typeof(DiamondMesh))]
+[RequireComponent(typeof(S09.DiamondMesh))]
 public class S09_Shear : MonoBehaviour
 {
     [SerializeField] float k = 0.4f;
-    DiamondMesh diamondMesh;
+    S09.DiamondMesh diamondMesh;
 
     void OnEnable()
     {
-        diamondMesh = GetComponent<DiamondMesh>();
+        diamondMesh = GetComponent<S09.DiamondMesh>();
     }
 
     void Update()

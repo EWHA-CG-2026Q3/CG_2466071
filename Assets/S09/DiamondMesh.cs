@@ -4,6 +4,8 @@
 // 이 스크립트는 메시를 만들고 보관하는 역할만 함 — 이동/회전/스케일 계산은 별도 스크립트가 담당.
 using UnityEngine;
 
+namespace S09
+{
 [ExecuteAlways]
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class DiamondMesh : MonoBehaviour
@@ -45,4 +47,5 @@ public class DiamondMesh : MonoBehaviour
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
     }
+}
 }

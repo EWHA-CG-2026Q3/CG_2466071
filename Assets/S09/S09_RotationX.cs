@@ -1,19 +1,19 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 // 실습: RotationZMatrixRaw()를 참고해 RotationXMatrixRaw()를 완성할 것
 // 확인: Transform의 Rotation x에 같은 각도를 넣은 다이아몬드와 겹치는지 비교
 // (이 오브젝트의 Transform은 기본값 Position 0, Rotation 0, Scale 1을 유지)
 [ExecuteAlways]
-[RequireComponent(typeof(DiamondMesh))]
+[RequireComponent(typeof(S09.DiamondMesh))]
 public class S09_RotationX : MonoBehaviour
 {
     [SerializeField] float angle = 30f;   // x축 회전 각도, 도 단위
 
-    DiamondMesh diamondMesh;
+    S09.DiamondMesh diamondMesh;
 
     void OnEnable()
     {
-        diamondMesh = GetComponent<DiamondMesh>();
+        diamondMesh = GetComponent<S09.DiamondMesh>();
     }
 
     void Update()

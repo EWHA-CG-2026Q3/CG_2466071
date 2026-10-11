@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 // 3×3 행렬로 되는 것과 안 되는 것을 확인하는 스크립트
 // - 스케일: 대각행렬로 성공 (다이아몬드에 바로 반영)
 // - 회전: 대각행렬로는 실패 (Console에 결과 출력)
 // - 이동: 어떤 3×3 행렬로도 실패 (Console에 결과 출력)
 [ExecuteAlways]
-[RequireComponent(typeof(DiamondMesh))]
+[RequireComponent(typeof(S09.DiamondMesh))]
 public class S09_MatrixLimits_Finish : MonoBehaviour
 {
     [Header("스케일을 대각행렬로")]
@@ -20,11 +20,11 @@ public class S09_MatrixLimits_Finish : MonoBehaviour
     [SerializeField] Vector3 row1 = new Vector3(0f, 1f, 0f);
     [SerializeField] Vector3 row2 = new Vector3(0f, 0f, 1f);
 
-    DiamondMesh diamondMesh;
+    S09.DiamondMesh diamondMesh;
 
     void OnEnable()
     {
-        diamondMesh = GetComponent<DiamondMesh>();
+        diamondMesh = GetComponent<S09.DiamondMesh>();
     }
 
     void Update()
