@@ -1,0 +1,12 @@
+S15 water textures - processed with RenderHub Seamless Texture Generator
+Tool: https://www.renderhub.com/3d-toolbox/seamless-texture-generator
+Settings: Blend edges, Blend width 25%, Irregular edges 50%, Keep contrast on, Even out lighting 60%, Original shape, Size 1024px. Edges centered and 3x3 tiled preview checked.
+
+S15_Water1_Seamless.png: lecture water 1, markusspiske / Pixabay, photo 617197
+https://pixabay.com/photos/pool-swimming-pool-water-blue-617197/
+S15_Water2_Seamless.png: lecture water 2, Mylene2401 / Pixabay, photo 8183918
+https://pixabay.com/photos/water-pool-reflection-swimming-pool-8183918/
+S15_Puddle_Seamless.png: independently selected extra-effect photo, Aquilatin / Pixabay, photo 103817
+https://pixabay.com/photos/water-swimming-pool-blue-water-103817/
+License: Pixabay Content License, https://pixabay.com/service/license-summary/
+Source images: 1280px. RenderHub exports: 1024x768, 1024x768, 1024x681. Unity Wrap Mode Repeat, Max Size 1024.
