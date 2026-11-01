@@ -1,0 +1,8 @@
+S14 lecture p.16 textures (1280px, original files)
+Metal: Lenalensen / Pixabay
+https://pixabay.com/photos/turquoise-sheet-weathered-corrosion-2083986/
+Lava: Arcturian / Pixabay
+https://pixabay.com/illustrations/lava-cracked-background-fire-656827/
+License: Pixabay Content License, https://pixabay.com/service/license-summary/
+Wood: existing Pavilion package, Assets/ThirdParty/Pavilion/Textures/Table_Wood.png
+Water textures belong to Exercise 6, outside this PDF's final assignment range (Exercises 3-5).
